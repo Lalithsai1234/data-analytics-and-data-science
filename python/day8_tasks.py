@@ -1,6 +1,6 @@
 limit_available=100000
 due_amount=0
-while True:
+while limit_available==0:
     spending_amount= int(input("enter how much do you want to spend: "))   #30000
     if limit_available>=spending_amount:
         limit_available-=spending_amount
