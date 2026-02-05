@@ -32,6 +32,8 @@ else:
     else:
         print(f"the total with all the charges is: {50+purchase+(10*(distance-3))}")
 
+
+
 #too add the tab spaces for a select and tab to remove use shift tab
 limit_available=100000
 due_amount=0
