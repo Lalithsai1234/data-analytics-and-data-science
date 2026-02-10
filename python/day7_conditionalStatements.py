@@ -80,21 +80,3 @@ elif condition2:
         print( " statementF2)
 else:
     print ("default statement")"""
-
-##instagram -->if acc is private ---> both are the friends --> you can send the message
-## if acc is public --> you send the message
-## if acc is private --> both are not friends --> you can't send msg
-
-acc_private=False
-friends=False
-allow_everyone=False
-if friends:
-    print("you can send the message")
-else:
-    if acc_private:
-        print("you can send the message")
-    else:
-        if allow_everyone:
-            print("send the message no need to follow")
-        else:
-            print("you can't send the message until the second person follows you")
