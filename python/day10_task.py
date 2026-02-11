@@ -5,6 +5,7 @@ while nums!=0:
     print(nums%10)
     nums//=10
 
+
 #iterate the number in the left to right with while loop
 #note without converting it into string
 

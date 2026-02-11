@@ -93,6 +93,7 @@ while nums!=0:
 
 
 """
+strong number
 perfect no
 perfect square
 buzz number
