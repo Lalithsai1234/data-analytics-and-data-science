@@ -1,14 +1,11 @@
 """
 set-methods
-
 1.intersection_update() -->#it will modify the original set with common elements from the given set
 2.difference_update() --> #it will removes the original set with values which are same by comparing with second set
 3.symmetric_difference() --> the new set with uncommon values from 2 sets we can use ^ A performs the symmetric difference operation
 5.symmetric_difference_update()--> it will modify the original set with un common values
 
-
 note:when we are suing the symbols the two object should be the set but when we are using the method name the objects can be list or tuple
-
 """
 set1={'kumar','vijay', 'ajay'}
 
@@ -110,9 +107,3 @@ dict1.update({'city1':'gtr'}) #it will update the existing value if the key exis
 print(dict1)
 
 dict1.clear() #it will clear the dict
-
-
-
-
-
-
