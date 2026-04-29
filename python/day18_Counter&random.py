@@ -68,4 +68,4 @@ print(counts)
 
 # Generate a random password every time you run the file
 # the password must be 10 characters
-# Password must have an Upper case character, Lower case character And a numberb
+# Password must have an Upper case character, Lower case character And a number
