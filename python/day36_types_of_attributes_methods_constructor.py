@@ -56,7 +56,7 @@ class student:
         print("welcome to 10k coders")
 
 s1=student(1, 'sai', 88)
-print(s1.id, s1.name, s1.marks)
+print(s1.id, s1.name, s1.marks, s1.clg_name)
 s1.clg_name='100kcoders' #it doesn't change the class variable it only changes for it
 print(s1.clg_name)
 
