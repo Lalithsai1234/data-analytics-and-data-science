@@ -1,0 +1,7 @@
+hello my name is lalith
+i am from jaggayyapeta
+i have completed my btech
+before that i completed diploma
+technical skills
+python
+sql
