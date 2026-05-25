@@ -11,3 +11,5 @@ def para(temp,rcount,lcount):
         para(temp+'}',rcount+1, lcount)
 para(temp,0,0)
 print(res) 
+
+

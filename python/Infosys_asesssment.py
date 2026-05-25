@@ -1,6 +1,6 @@
-brac=input()
-l_price=int(input()) #price of one '('
-r_price=int(input()) #price of one ')'
+brac="(())))"#input()
+l_price=5#int(input()) #price of one '('
+r_price=3#int(input()) #price of one ')'
 l_count=0
 r_count=0
 for i in brac:
@@ -16,3 +16,24 @@ sum+=r_count*l_price
 print(sum)
 
 
+def get_permutations(numbers, path=[], used=[]):
+    # If our path is the same length as the numbers, we found a full combination!
+    if len(path) == len(numbers):
+        print(path)
+        return
+
+    # Try adding each number
+    for i in range(len(numbers)):
+        if i not in used:
+            # 1. Choose a number
+            used.append(i)
+            path.append(numbers[i])
+            
+            # 2. Explore further
+            get_permutations(numbers, path, used)
+            
+            # 3. Step back (Backtrack) to try the next option
+            path.pop()
+            used.pop()
+
+get_permutations([1, 2, 3, 4])

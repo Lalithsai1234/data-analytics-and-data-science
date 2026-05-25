@@ -90,3 +90,10 @@ with open("d:/10k coders/python/day52_text.txt",'r') as f:
 # with open("d:/10k coders/python/day52_text.txt",'r') as f, with open("d:/10k coders/python/day52_text.txt",'w') as nf:
 #     for line in f:
 #         nf.write(line)
+
+
+"""
+Working and importance of the f.close()
+data -> RAM(Buffer) - > Hard Disk
+f.close() -flush()
+"""
