@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="120" viewBox="0 0 700 120">
+  <rect rx="8" ry="8" x="20" y="20" width="660" height="40" fill="#e6eef8" />
+  <rect rx="8" ry="8" id="bar" x="20" y="20" width="0" height="40" fill="#3b82f6" />
+  <text x="350" y="48" fill="#06283d" font-size="18" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif">Python files: 63</text>
+  <animate xlink:href="#bar" attributeName="width" from="0" to="473" dur="2s" fill="freeze" />
+</svg>
