@@ -221,4 +221,58 @@ print(s.fillna(0)) #it will fill the null value with given value
 # dtype: float64
 
 
+"""
+locating
+s.loc[]
+s.iloc[]
+"""
+s=pd.Series([1,2,3,4,5,6,7,8,9])
+print(s.iloc[-1])#with this we can use indexing like a list op:9
+print(s.iloc[[1,4]]) #we can access the multiple indexing at a time 
+# 1    2
+# 4    5
+# dtype: int64
+print(s.iloc[1:4])#we do indexing where the the keys of series are not numbers
+#1    2
+# 2    3
+# 3    4
+# dtype: int64
+s.index=[chr(i) for i in range(65,74)]
+# print(s.iloc['A']) gives an error
+print(s.loc[['A', 'C']]) #we use loc for key indexing
+# A    1
+# C    3
+# dtype: int64
+print(s.loc['A':'D'])#while indexing with loc the end will also print
+#A    1
+# B    2
+# C    3
+# D    4
+# dtype: int64
 
+
+"""
+other methods
+s.info()
+s.describe()
+"""
+print(s.info())
+# <class 'pandas.core.series.Series'>
+# Index: 9 entries, A to I
+# Series name: None
+# Non-Null Count  Dtype
+# --------------  -----
+# 9 non-null      int64
+# dtypes: int64(1)
+# memory usage: 444.0+ bytes
+# None
+print(s.describe())
+# count    9.000000
+# mean     5.000000
+# std      2.738613
+# min      1.000000
+# 25%      3.000000
+# 50%      5.000000
+# 75%      7.000000
+# max      9.000000
+# dtype: float64
