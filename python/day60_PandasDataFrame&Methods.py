@@ -123,3 +123,4 @@ df.drop(10, inplace=True) #with inplace we can change the original dataframe
 
 df.drop(columns='Gender', inplace=True) #it will delete a column from dataframe #note if you print it op:None
 print(df.drop(columns=["name","Ages"]) ) #it will returns thee data frame with deleted columns doesn't change anything
+
