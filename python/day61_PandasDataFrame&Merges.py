@@ -171,9 +171,29 @@ concat_df2 = pd.DataFrame({
 print(pd.concat([concat_df1, concat_df2], ignore_index=True))
 #    id    Name
 # 0   1  Suresh
-# 1   2  Ramesh
+# 1   2  Ramesh 
 # 2   3  Mahesh
 # 3   4   Kiran
 # 4   5   Anita
 # 5   6  Naveen
+
+
+df['Places'].replace('hyd', 'Hyderabad')
+# print(df) it doesn't replace the original df/
+df['Places']=df['Places'].replace('Hyd', 'Hyderabad')
+print(df['Places'])
+# 0    Hyderabad
+# 1          Bng
+# 2          Chn
+# 3          NaN
+# 4          Del
+# 5          Kol
+# 6          NaN
+# 7    Hyderabad
+# 8          Bng
+# 9          Mum
+# Name: Places, dtype: object
+df.rename(columns={'name':'Names'}, inplace=True) #without inplace it gives the error
+print(df.columns)
+# Index(['Names', 'Ages', 'Places', 'Status'], dtype='object')
 
